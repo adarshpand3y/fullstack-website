@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Display Time On Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: cursive, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%0;
+    height: 100vh;
+    background: #0e6c91;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #040404;
+    text-decoration-color: blue;
+    font-size: 90px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.quotes{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 15%;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
+}
+.quotes h2{
+    font-size: 45px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #040404;
+}
+</style>
+    
+    <body>
+        <div class="container">
+        <!-- <img src="sunset-2501729_1280.png"> -->
+        <h1 id="current-time"></h1>
+        <div class="quotes">
+            <p>TODAY'S QUOTES</p>
+            <h2>Success doesn’t come to you, you go to it.</h2>
+        </div>
+    </div>
+    <script>
+        let time = document.getElementById("current-time");
+        
+        setInterval(() =>{    
+        let d = new Date();
+        time.innerHTML = d.toLocaleTimeString();
+    },1000 )
+
+    </script>
+    </body>
+</html>
