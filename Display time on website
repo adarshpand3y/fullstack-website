@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
         <title>Display Time On Website</title>
         <link rel="stylesheet" href="style.css">
-    </head>
+    
     
     <style>
     *{
@@ -52,6 +52,7 @@
     color: #040404;
 }
 </style>
+</head>
     
     <body>
         <div class="container">
